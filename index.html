@@ -18,15 +18,26 @@
         
         <input type="text" id="nombre" name="nombre"/> <br>
         
-        <button id=boton onclick="COMENZAR"</button>
-        
+       <button onclick="myFunction()">COMENZAR</button>
+
+<script>
+function myFunction() {
+  document.open("text/html","replace");
+  document.write("<h2>Pregunta 1: ¿Quién dijo SOLO SE QUE NADA SE?<br>
+  <input type="radio" name="q1" value="a"> <label for="a">Aristoteles</label><br>
+            <input type="radio" name="q1" value="b"> <label for="b">Platón</label><br>
+            <input type="radio" name="q1" value="c"> <label for="c">Sócrates</label><br>
+            <input type="radio" name="q1" value="d"> <label for="d">Pitágoras</label><br></h2>");
+  document.close();
+}
+</script>
         
       </section>
       
       
         
     <div class="question">
-            <p>Pregunta 1: ¿Quién dijo "SOLO SE QUE NADA SE "?</p>
+            <p>Pregunta 1: ¿Quién dijo "SOLO SE QUE NADA SE"?</p>
             <input type="radio" name="q1" value="a"> <label for="a">Aristoteles</label><br>
             <input type="radio" name="q1" value="b"> <label for="b">Platón</label><br>
             <input type="radio" name="q1" value="c"> <label for="c">Sócrates</label><br>
