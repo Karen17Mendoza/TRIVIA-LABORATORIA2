@@ -3,25 +3,29 @@
   
   <head>
     
+    <link rel="stylesheet" href="style.css">
+    
     <title>Trivia: Juego de adivinanzas</title>
     
   </head>
   
   <body>
+  
+   <div id="bienvenida">
+    
+      <h1>¡ADIVINA ADIVINADOR!</h1>
         
-      <section id="hero">
+      <label for="nombre"> Ingresa tu nombre:</label>
         
+      <input type="text" id="nombre" name="nombre"/> <br>
         
-        <h1>¡ADIVINA ADIVINADOR!</h1>
-        
-        <label for="nombre"> Ingresa tu nombre:</label>
-        
-        <input type="text" id="nombre" name="nombre"/> <br>
-        
-        <button>COMENZAR</button>
+      <button onclick="iniciarJuego()">Jugar</button>
+    
+    </div> 
       
-        
-      </section>
+    <div id="question" style="display: block;">
+        <p id="mensajeBienvenida"></p>    
+    
       
       
         
